@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Оформление заказа | Цветы из синельной проволоки</title>
+  <meta name="description" content="Страница оформления заказа на букеты из синельной проволоки. Укажите свои данные и мы свяжемся с вами для подтверждения.">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Montserrat', sans-serif; background-color: #f7f3f0; color: #333; }
+    header { background: linear-gradient(135deg, #fcd5ce 0%, #f8edeb 100%); padding: 30px 20px; text-align: center; }
+    header h1 { font-size: 2.5rem; color: #a23e48; margin-bottom: 10px; }
+    header p { font-size: 1.1rem; color: #6b705c; }
+    nav { margin: 20px 0; text-align: center; }
+    nav a { text-decoration: none; margin: 0 15px; font-weight: 600; color: #a23e48; padding: 8px 16px; border: 2px solid #a23e48; border-radius: 30px; transition: background 0.3s, color 0.3s; }
+    nav a:hover { background: #a23e48; color: #fff; }
+    nav a.active { background: #a23e48; color: #fff; }
+    .container { width: 90%; max-width: 600px; margin: auto; padding: 20px 0; }
+    form { background: #fff; border-radius: 10px; padding: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+    form label { display: block; margin-bottom: 8px; font-weight: 600; }
+    form input, form select, form textarea { width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px; font-size: 1rem; }
+    form textarea { resize: vertical; height: 100px; }
+    form button { background: #a23e48; color: #fff; border: none; padding: 12px 20px; border-radius: 30px; cursor: pointer; font-size: 1rem; font-weight: 600; transition: background 0.3s; }
+    form button:hover { background: #6b0b1a; }
+    footer { background-color: #fcd5ce; text-align: center; padding: 20px; margin-top: 40px; }
+    footer p { font-size: 0.9rem; color: #6b705c; }
+  </style>
+</head>
+<body>
+  <!-- Хедер -->
+  <header>
+    <h1>Оформление заказа</h1>
+    <p>Укажите ваши данные для подтверждения заказа</p>
+  </header>
+
+  <!-- Навигация -->
+  <nav>
+    <a href="index.html">Главная</a>
+    <a href="order.html" class="active">Оформить заказ</a>
+  </nav>
+
+  <div class="container">
+    <!-- Форма заказа -->
+    <form action="#" method="post">
+      <label for="name">Ваше имя</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Иван Иванов"
+        required
+      >
+
+      <label for="phone">Телефон</label>
+      <input
+        type="tel"
+        id="phone"
+        name="phone"
+        placeholder="+7 (900) 123-45-67"
+        required
+      >
+
+      <label for="email">Email</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="example@mail.com"
+      >
+
+      <label for="product">Выберите товар</label>
+      <select id="product" name="product" required>
+        <option value="" disabled selected>-- Выберите из списка --</option>
+        <option value="roses">Розовый букет — 800 ₽</option>
+        <option value="spring">Весенняя композиция — 1200 ₽</option>
+        <option value="mini">Мини-букет — 500 ₽</option>
+      </select>
+
+      <label for="message">Комментарий к заказу</label>
+      <textarea
+        id="message"
+        name="message"
+        placeholder="Например: “Дарить 10 июля в 15:00 по адресу…”"
+      ></textarea>
+
+      <button type="submit">Отправить заказ</button>
+    </form>
+  </div>
+
+  <!-- Футер -->
+  <footer>
+    <p>&copy; 2025 Цветы из синельной проволоки. Все права защищены.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

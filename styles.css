@@ -1,0 +1,200 @@
+/* Сброс базовых стилей */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Подключаем шрифт Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f7f3f0;
+  color: #333;
+}
+
+/* Хедер */
+header {
+  background: linear-gradient(135deg, #fcd5ce 0%, #f8edeb 100%);
+  padding: 30px 20px;
+  text-align: center;
+}
+header h1 {
+  font-size: 2.5rem;
+  color: #a23e48;
+  margin-bottom: 10px;
+}
+header p {
+  font-size: 1.1rem;
+  color: #6b705c;
+}
+
+/* Навигация */
+nav {
+  margin: 20px 0;
+  text-align: center;
+}
+nav a {
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 600;
+  color: #a23e48;
+  padding: 8px 16px;
+  border: 2px solid #a23e48;
+  border-radius: 30px;
+  transition: background 0.3s, color 0.3s;
+}
+nav a:hover {
+  background: #a23e48;
+  color: #fff;
+}
+nav a.active {
+  background: #a23e48;
+  color: #fff;
+}
+
+/* Контейнер для основной области страниц */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+/* Секции */
+.section {
+  margin: 40px 0;
+}
+.section-title {
+  font-size: 1.8rem;
+  color: #a23e48;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Каталог товаров (index.html) */
+.catalog {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.product {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  width: 280px;
+}
+.product img {
+  width: 100%;
+  display: block;
+}
+.product-info {
+  padding: 15px;
+}
+.product-info h3 {
+  font-size: 1.2rem;
+  color: #a23e48;
+  margin-bottom: 8px;
+}
+.product-info p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 12px;
+}
+.product-info .price {
+  font-weight: 600;
+  color: #a23e48;
+  margin-bottom: 12px;
+}
+.product-info button {
+  background: #a23e48;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+.product-info button:hover {
+  background: #6b0b1a;
+}
+
+/* Мобильная версия: */
+@media (max-width: 600px) {
+  .product {
+    width: 100%;
+  }
+}
+
+/* Секция «О нас» */
+.about p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin: 0 20px 0 20px;
+}
+
+/* Секция «Отзывы» */
+.reviews-list {
+  list-style: none;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.reviews-list li {
+  background: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 15px;
+}
+.reviews-list li p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 8px;
+}
+.reviews-list li span {
+  display: block;
+  font-size: 0.9rem;
+  color: #a23e48;
+  text-align: right;
+}
+
+/* Секция «Контакты» */
+.contacts p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+.contacts ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 10px;
+}
+.contacts ul li {
+  margin-bottom: 5px;
+}
+.contacts ul li a {
+  color: #a23e48;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.contacts ul li a:hover {
+  color: #6b0b1a;
+}
+
+/* Футер */
+footer {
+  background-color: #fcd5ce;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+footer p {
+  font-size: 0.9rem;
+  color: #6b705c;
+}
